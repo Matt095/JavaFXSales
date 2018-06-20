@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane1" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coursework.CourseworkController">
+   <children>
+      <VBox>
+         <children>
+            <HBox>
+               <children>
+                  <StackPane fx:id="StackPane2">
+                     <children>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Year Filters:" />
+                              <HBox fx:id="HBox1" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox fx:id="HBox4" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </StackPane>
+                  <StackPane>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Filters:" />
+                              <HBox fx:id="HBox5" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox fx:id="HBox6" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </StackPane>
+                  <StackPane>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Region Filters:" />
+                              <HBox fx:id="HBox7" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox fx:id="HBox8" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="HBox2" spacing="10.0">
+               <children>
+                  <RadioButton fx:id="RadioButton1" mnemonicParsing="false" selected="true" text="Bar Chart">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="ToggleGroup1" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="RadioButton6" mnemonicParsing="false" text="Line Chart" toggleGroup="$ToggleGroup1" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox>
+               <children>
+                  <StackPane fx:id="StackPane1">
+                     <children>
+                        <BarChart fx:id="BarChart1" animated="false" title="Sales By Year" visible="false">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="yAxis" side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <LineChart fx:id="LineChart1" animated="false" title="Sales By Year" visible="false">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </LineChart>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </StackPane>
+                  <StackPane>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <BarChart fx:id="BarChart2" animated="false" title="Sales by Vehicle" visible="false">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </BarChart>
+                        <LineChart fx:id="LineChart2" animated="false" title="Sales By Vehicle" visible="false">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </LineChart>
+                     </children>
+                  </StackPane>
+                  <StackPane>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <BarChart fx:id="BarChart3" animated="false" title="Sales by Region" visible="false">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </BarChart>
+                        <LineChart fx:id="LineChart3" animated="false" title="Sales By Region" visible="false">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </LineChart>
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <TableView fx:id="TableView1" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="ColYear" prefWidth="75.0" text="Year" />
+                  <TableColumn fx:id="ColQTR" prefWidth="75.0" text="QTR" />
+                  <TableColumn fx:id="ColRegion" prefWidth="75.0" text="Region" />
+                  <TableColumn fx:id="ColVehicle" prefWidth="75.0" text="Vehicle" />
+                  <TableColumn fx:id="ColSales" prefWidth="75.0" text="Sales" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
